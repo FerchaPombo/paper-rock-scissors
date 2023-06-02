@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+/* main view setup*/
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    font-family: 'Bangers', cursive;
+    margin: 0;
+}
