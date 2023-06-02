@@ -16,30 +16,35 @@
     <header>
         <h1>Rock-Paper-Scissors!</h1>
     </header>
+    <section>
 
+        <div class="game-area">
+            <p>Try your luck, choose one:</p>
+            <button aria-label="Rock" data-choice="0" class="control">Rock</button>
+            <button aria-label="Paper" data-choice="1" class="control">Paper</button>
+            <button aria-label="scissors" data-choice="2" class="control">Scissors</button>
+        </div>
 
-    <div class="game-area">
-        <p>Try your luck, choose one:</p>
-        <button aria-label="Rock" data-choice="0" class="control">Rock</button>
-        <button aria-label="Paper" data-choice="1" class="control">Paper</button>
-        <button aria-label="scissors" data-choice="2" class="control">Scissors</button>
-    </div>
+        <div id="messages"></div>
 
-    <div id="messages"></div>
+        <div class="player">
+            <h2 class="scores">Your Score:</h2><span id="player-scores">0</span></h2>
+            <img id="player-image" src="assets/opening.jpg"
+                alt="Hands making Rock-Paper-Scissors gestures with a green leafy background">
+        </div>
 
-    <div class="player">
-        <h2 class="scores">Your Score:</h2><span id="player-scores">0</span></h2>
-        <img id="player-image" src="assets/opening.jpg"
-            alt="Hands making Rock-Paper-Scissors gestures with a green leafy background">
-    </div>
+        <div class="computer">
+            <h2 class="scores">Computer Score:</h2><span id="computer-scores">0</span></h2>
+            <img id="computer-image" src="assets/opening.jpg"
+                alt="Hands making Rock-Paper-Scissors gestures with a green leafy background">
+        </div>
 
-    <div class="computer">
-        <h2 class="scores">Computer Score:</h2><span id="computer-scores">0</span></h2>
-        <img id="computer-image" src="assets/opening.jpg"
-            alt="Hands making Rock-Paper-Scissors gestures with a green leafy background">
-    </div>
+    </section>
 
-
+    <footer>
+        <h3>Rules:</h3>
+        <p>Scissors cut Paper. Paper covers Rock. Rock smashes Scissors</p>
+    </footer>
 
 
     <script src="script.js"></script>
