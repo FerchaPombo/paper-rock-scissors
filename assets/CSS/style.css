@@ -1,13 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
-
-/* main view setup*/
-
-html {
-    min-height: 100%;
-    position: relative;
-}
+/*font is not being added*/
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 
 body {
-    font-family: 'Bangers', cursive;
+    font-family: 'Amatic SC', cursive;
     margin: 0;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    font-size: xx-large;
+}
+
+#game-area {
+    border-width: thick;
 }
