@@ -15,6 +15,7 @@ header {
     text-align: center;
     font-size: 80px;
     border-bottom: 5px black solid;
+    line-height: 0%;
 }
 
 footer {
@@ -23,7 +24,18 @@ footer {
     left: 0;
     bottom: 0;
     box-sizing: border-box;
-    font-size: x-large;
-    border-top: 5px solid black;
+    font-size: 80%;
+    border-top: 5px black solid;
 
+}
+
+#game-area {
+
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    text-align: center;
+    text-decoration: underline;
+    font-size: xx-large;
 }
