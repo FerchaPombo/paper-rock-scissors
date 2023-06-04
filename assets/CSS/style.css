@@ -20,16 +20,7 @@
      line-height: 0%;
  }
 
- footer {
-     position: relative;
-     width: 100%;
-     left: 0;
-     bottom: 0;
-     box-sizing: border-box;
-     font-size: 80%;
-     border-top: 5px black solid;
 
- }
 
  .game-area {
      width: 75%;
@@ -38,37 +29,54 @@
      margin-top: 1%;
      text-align: center;
      font-size: 300%;
+     margin-bottom: 5px;
+     padding-bottom: 2%;
  }
 
  .control {
+
      display: inline-block;
-     margin: 2px;
      width: 100px;
      height: 60px;
      border-radius: 0%;
      font-size: 50%;
      font-family: 'Amatic SC', cursive;
      font-weight: bolder;
-     letter-spacing: 2psx;
+     letter-spacing: 2px;
  }
 
  .player {
+     margin-left: 5%;
      float: left;
-     width: 50%;
+     width: 40%;
+     border-style: solid;
 
  }
 
  #player-image {
      width: 60%;
+
  }
 
  .computer {
+     margin-right: 5%;
      float: right;
-     width: 50%;
+     width: 40%;
+     border-style: solid;
 
  }
 
 
  #computer-image {
      width: 60%;
+
+ }
+
+ footer {
+     padding-top: 30%;
+     position: relative;
+     width: 100%;
+     left: 0;
+     bottom: 0;
+     font-size: xx-large;
  }
