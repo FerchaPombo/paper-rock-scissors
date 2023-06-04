@@ -29,20 +29,19 @@ footer {
 
 }
 
-#game-area {
+.game-area {
 
     width: 75%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1%;
     text-align: center;
-    text-decoration: underline;
-    font-size: xx-large;
+    font-size: 300%;
 }
 
 .control {
     display: inline-block;
-    margin: 5px;
+    margin: 2px;
     width: 80px;
     height: 40px;
 }
