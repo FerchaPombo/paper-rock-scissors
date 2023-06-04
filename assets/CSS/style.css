@@ -39,3 +39,10 @@ footer {
     text-decoration: underline;
     font-size: xx-large;
 }
+
+.control {
+    display: inline-block;
+    margin: 5px;
+    width: 80px;
+    height: 40px;
+}
