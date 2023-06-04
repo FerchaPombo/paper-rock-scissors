@@ -42,6 +42,12 @@ footer {
 .control {
     display: inline-block;
     margin: 2px;
-    width: 80px;
-    height: 40px;
+    width: 100px;
+    height: 60px;
+    border-radius: 0%;
+    font-size: 50%;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bolder;
+    letter-spacing: 2px;
+
 }
