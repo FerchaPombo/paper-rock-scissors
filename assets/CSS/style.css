@@ -1,6 +1,9 @@
 /*font is not being added*/
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 
+
+/* Main View Setup */
+
 body {
     font-family: 'Amatic SC', cursive;
     margin: 0;
@@ -10,9 +13,17 @@ body {
 
 header {
     text-align: center;
-    font-size: xx-large;
+    font-size: 80px;
+    border-bottom: 5px black solid;
 }
 
-#game-area {
-    border-width: thick;
+footer {
+    position: relative;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    font-size: x-large;
+    border-top: 5px solid black;
+
 }
