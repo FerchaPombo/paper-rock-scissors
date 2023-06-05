@@ -13,6 +13,7 @@
      text-align: center;
  }
 
+ /*header*/
  header {
      text-align: center;
      font-size: 38px;
@@ -21,7 +22,7 @@
  }
 
 
-
+ /* game area styling */
  .game-area {
      width: 75%;
      margin-left: auto;
@@ -50,6 +51,7 @@
      letter-spacing: 2px;
  }
 
+
  .player {
      margin-left: 5%;
      float: left;
@@ -61,6 +63,10 @@
  #player-image {
      width: 59%;
 
+ }
+
+ #player-scores {
+     font-size: 200%;
  }
 
  .computer {
@@ -77,11 +83,19 @@
 
  }
 
+ #computer-scores {
+     font-size: 200%;
+ }
+
  .scores {
      font-size: 200%;
      font-weight: bolder;
+     text-align: left;
+     margin-left: 10%;
  }
 
+
+ /*footer area */
  footer {
      padding-top: 30%;
      position: relative;
