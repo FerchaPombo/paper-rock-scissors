@@ -28,8 +28,9 @@
      margin-right: auto;
      margin-top: 1px;
      text-align: center;
-     font-size: 250%;
+     font-size: 200%;
      margin-bottom: 5px;
+     font-weight: bolder;
 
  }
 
@@ -58,7 +59,7 @@
  }
 
  #player-image {
-     width: 65%;
+     width: 59%;
 
  }
 
@@ -72,7 +73,7 @@
 
 
  #computer-image {
-     width: 65%;
+     width: 59%;
 
  }
 
@@ -82,7 +83,7 @@
  }
 
  footer {
-     padding-top: 35%;
+     padding-top: 30%;
      position: relative;
      width: 100%;
      left: 0;
