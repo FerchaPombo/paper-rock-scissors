@@ -66,7 +66,8 @@
  }
 
  #player-scores {
-     font-size: 200%;
+     font-size: 150%;
+     padding-left: 10%;
  }
 
  .computer {
@@ -84,7 +85,8 @@
  }
 
  #computer-scores {
-     font-size: 200%;
+     font-size: 150%;
+     padding-left: 10%;
  }
 
  .scores {
@@ -97,7 +99,7 @@
 
  /*footer area */
  footer {
-     padding-top: 30%;
+     padding-top: 33%;
      position: relative;
      width: 100%;
      left: 0;
