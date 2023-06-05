@@ -15,7 +15,7 @@
 
  header {
      text-align: center;
-     font-size: 80px;
+     font-size: 38px;
      border-bottom: 5px black solid;
      line-height: 0%;
  }
@@ -26,11 +26,15 @@
      width: 75%;
      margin-left: auto;
      margin-right: auto;
-     margin-top: 1%;
+     margin-top: 1px;
      text-align: center;
-     font-size: 300%;
+     font-size: 250%;
      margin-bottom: 5px;
-     padding-bottom: 2%;
+
+ }
+
+ #messages {
+     height: 20px;
  }
 
  .control {
@@ -39,7 +43,7 @@
      width: 100px;
      height: 60px;
      border-radius: 0%;
-     font-size: 50%;
+     font-size: 70%;
      font-family: 'Amatic SC', cursive;
      font-weight: bolder;
      letter-spacing: 2px;
@@ -54,7 +58,7 @@
  }
 
  #player-image {
-     width: 60%;
+     width: 65%;
 
  }
 
@@ -68,7 +72,7 @@
 
 
  #computer-image {
-     width: 60%;
+     width: 65%;
 
  }
 
@@ -78,7 +82,7 @@
  }
 
  footer {
-     padding-top: 30%;
+     padding-top: 35%;
      position: relative;
      width: 100%;
      left: 0;
