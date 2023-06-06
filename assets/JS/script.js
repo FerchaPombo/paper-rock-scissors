@@ -8,5 +8,18 @@ const computerScores = getElementById("computer-scores");
 const playerImage = getElementByID("player-image");
 const computerImage = getElementByID("computer-image");
 const messages = getElementByID('messages');
-const choices = ['rock', 'paper', 'scissors'];
+const options = ['rock', 'paper', 'scissors'];
+
+/**
+ * Adding here the  event listeners to each of the buttons
+ */
+
+for (let button of buttons) {
+    button.addEventListener('click', function() {
+        let playerOption = this.getAtribute('data-choice');
+        playgame(playerChoice);
+    });
+
+}
+
 
