@@ -3,12 +3,12 @@
  */
 // Constants declaration code below based on Code Institute Rock Paper Scissors game
 const buttons = getElementByClassName('control');
-const playerScores = getElementById("player - scores");
+const playerScores = getElementById("player-scores");
 const computerScores = getElementById("computer-scores");
 const playerImage = getElementByID("player-image");
 const computerImage = getElementByID("computer-image");
 const messages = getElementByID('messages');
-const options = ['rock', 'paper', 'scissors'];
+const choices = ['rock', 'paper', 'scissors'];
 
 /**
  * Adding here the  event listeners to each of the buttons
@@ -16,7 +16,7 @@ const options = ['rock', 'paper', 'scissors'];
 
 for (let button of buttons) {
     button.addEventListener('click', function () {
-        let playerOption = this.getAtribute('data-choice');
+        let playerChoice = this.getAtribute("data-choice");
         playGame(playerChoice);
     });
 
@@ -29,14 +29,51 @@ for (let button of buttons) {
 
 function playGame(playerChoice) {
 
-    playerImage.src = `assets/images/${OPTIONS[playerOption]}.png`;
-    playerImage.alt = OPTIONS[playerOption];
+    playerImage.src = 'assets/images/${choices[playerChoice]}.png';
+    playerImage.alt = choices[playerChoice];
 
-    let computerChoice = math.floor(math.random() * 3);
+    let computerChoice = Math.floor(Math.random() * 3);
 
-    computerImage.src = `assets/images/${OPTIONS[computerOption]}.png`;
-    computerImage.alt = OPTIONS[computerOption];
+    computerImage.src = 'assets/images/${choices[computerChoice]}.png';
+    computerImage.alt = choices[computerChoice];
+
+    let result = checkWinner(choices[computerChoice], choices[playerChoice]);
+
+    updateScores(result);
 
 
 }
 
+/**
+ * here we add the functions to see who the winner is. 
+ */
+
+function checkWinner() {
+    if (playerScores === computerScores) {
+        return "You draw!";
+    }
+    if (playerScores === 'rock') {
+        if (computerScores === 'paper') {
+            return 'Computer Wins!';
+        }
+    }
+    else {
+        return 'You Win!';
+    }
+    if (playerScores === 'paper') {
+        if (computerScores === 'scissors') {
+            return 'Computer Wins!';
+        }
+    }
+    else {
+        return 'You Win!';
+    }
+    if (playerScores === 'scissors') {
+        if (computerScores === 'rock') {
+            return 'Computer Wins!';
+        }
+    }
+    else {
+        return 'You Win!';
+    }
+}; 
