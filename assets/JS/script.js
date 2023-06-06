@@ -15,11 +15,28 @@ const options = ['rock', 'paper', 'scissors'];
  */
 
 for (let button of buttons) {
-    button.addEventListener('click', function() {
+    button.addEventListener('click', function () {
         let playerOption = this.getAtribute('data-choice');
-        playgame(playerChoice);
+        playGame(playerChoice);
     });
 
 }
+/**
+ * This is the main Game Function. This accepts only one parameter, whichis the selected button. 
+ * This function will select the image and the Alt text of the players choice from the DOM.
+ * Computer`s choice is randomly selected.
+ */
 
+function playGame(playerChoice) {
+
+    playerImage.src = `assets/images/${OPTIONS[playerOption]}.png`;
+    playerImage.alt = OPTIONS[playerOption];
+
+    let computerChoice = math.floor(math.random() * 3);
+
+    computerImage.src = `assets/images/${OPTIONS[computerOption]}.png`;
+    computerImage.alt = OPTIONS[computerOption];
+
+
+}
 
