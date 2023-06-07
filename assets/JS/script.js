@@ -39,7 +39,7 @@ function playGame(playerChoice) {
 
     let result = checkWinner(choices[computerChoice], choices[playerChoice]);
 
-    checkWinner(result);
+    updateScores(result);
 
 
 }
@@ -81,3 +81,10 @@ function checkWinner(playerScores, computerScores) {
 /**
  * add a function to update the resut 
  */
+
+function updateScores() {
+
+    if (playerScores === 'rock') {
+        if (computerScores === 'paper') {
+            return = (computerScores + 1);
+        }
