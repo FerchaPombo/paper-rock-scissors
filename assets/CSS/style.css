@@ -104,6 +104,10 @@
  footer {
 
      position: absolute;
+<<<<<<< HEAD
+=======
+     padding-top: 150%;
+>>>>>>> 01829af6f805cede2cbcfe0d4daad486b6cd56de
      width: 100%;
      left: 0;
      bottom: 0;
