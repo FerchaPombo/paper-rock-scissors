@@ -48,7 +48,7 @@ function playGame(playerChoice) {
  * here we add the functions to see who the winner is. 
  */
 
-function checkWinner() {
+function checkWinner(playerScores, computerScores) {
     if (playerScores === computerScores) {
         return "You draw!";
     }
