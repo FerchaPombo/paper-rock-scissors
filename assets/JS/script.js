@@ -79,12 +79,31 @@ function checkWinner(playerScores, computerScores) {
 };
 
 /**
- * add a function to update the resut 
+ * add a function to update the resut, dont really know how i am gonna create this, but here we go 
  */
 
 function updateScores() {
 
     if (playerScores === 'rock') {
         if (computerScores === 'paper') {
-            return = (computerScores + 1);
+            return (computerScores + 1);
+        } else {
+            return (playerScores + 1);
         }
+    }
+    if (playerScores === 'paper') {
+        if (computerScores === 'scissors') {
+            return (computerScores + 1);
+        } else {
+            return (playerscores + 1);
+        }
+    }
+    if (playerScores === 'scissors') {
+        if (computerScores === 'rock') {
+            return (computerScores + 1);
+        }
+    }
+    else {
+        return (playerScores + 1);
+    }
+}
