@@ -21,6 +21,10 @@
      line-height: 0%;
  }
 
+ section {
+     padding-bottom: 45%;
+ }
+
 
  /* game area styling */
  .game-area {
@@ -96,11 +100,10 @@
      margin-left: 10%;
  }
 
-
  /*footer area */
  footer {
-     padding-top: 400px;
-     position: relative;
+
+     position: absolute;
      width: 100%;
      left: 0;
      bottom: 0;

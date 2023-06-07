@@ -42,49 +42,4 @@ function playGame(playerChoice) {
     updateScores(result);
 
 
-}
-
-/**
- * here we add the functions to see who the winner is. 
- */
-
-function checkWinner(playerScores, computerScores) {
-    if (playerScores === computerScores) {
-        return "You draw!";
-    }
-    if (playerScores === 'rock') {
-        if (computerScores === 'paper') {
-            return 'Computer Wins!';
-        }
-    }
-    else {
-        return 'You Win!';
-    }
-    if (playerScores === 'paper') {
-        if (computerScores === 'scissors') {
-            return 'Computer Wins!';
-        }
-    }
-    else {
-        return 'You Win!';
-    }
-    if (playerScores === 'scissors') {
-        if (computerScores === 'rock') {
-            return 'Computer Wins!';
-        }
-    }
-    else {
-        return 'You Win!';
-    }
 };
-
-/**
- * add a function to update the resut 
- */
-
-function updateScores() {
-
-    if (playerScores === 'rock') {
-        if (computerScores === 'paper') {
-            return = (computerScores + 1);
-        }
