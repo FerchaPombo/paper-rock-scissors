@@ -9,6 +9,7 @@ const playerImage = document.getElementById("player-image");
 const computerImage = document.getElementById("computer-image");
 const messages = document.getElementById('messages');
 const choices = ['rock', 'paper', 'scissors'];
+const score = [0, 0];
 
 /**
  * Adding here the  event listeners to each of the buttons
@@ -37,39 +38,47 @@ function playGame(playerChoice) {
     computerImage.src = `assets/images/${choices[computerChoice]}.jpg`;
     computerImage.alt = choices[computerChoice];
 
-    let result = checkWinner(choices[computerChoice], choices[playerChoice]);
+    let result = (checkWinner(choices[computerChoice], choices[playerChoice]));
+
 
     updateScores(result);
-
-
 };
+function checkWinner() {
+    if (playerChoice === computerChoice) {
+        result.textContent = 'Its a Draw!';
+    }
+    else if (playerChoice == 'rock') {
+        if (computerChoice == 'paper') {
+            result.textContent = 'Computer Won';
+            computerScores++;
 
-/**
- * add a function to update the resut, dont really know how i am gonna create this, but here we go 
- */
 
-function updateScores() {
-
-    if (playerScores === 'rock') {
-        if (computerScores === 'paper') {
-            return (computerScores + 1);
         } else {
-            return (playerScores + 1);
+            result.textContent = 'Player Won';
+            playerScores++;
+
         }
     }
-    if (playerScores === 'paper') {
-        if (computerScores === 'scissors') {
-            return (computerScores + 1);
+    else if (playerChoice == 'scissors') {
+        if (computerChoice == 'rock') {
+            result.textContent = 'Computer Won';
+            computerScores++;
+
         } else {
-            return (playerScores + 1);
+            result.textContent = 'Player Won';
+            playerScore++;
+
         }
     }
-    if (playerScores === 'scissors') {
-        if (computerScores === 'rock') {
-            return (computerScores + 1);
+    else if (playerChoice == 'paper') {
+        if (computerChoice == 'scissors') {
+            result.textContent = 'Computer Won';
+            computerScores++;
+
+        } else {
+            result.textContent = 'Player Won';
+            playerScores++;
+
         }
-    }
-    else {
-        return (playerScores + 1);
     }
 }

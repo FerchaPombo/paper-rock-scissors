@@ -105,17 +105,18 @@
      bottom: 0;
      font-size: xx-large;
      margin-top: auto;
-     padding-top: 1rem;
+     padding-top: 2rem;
  }
 
  #github {
      float: left;
-     margin-left: 15px;
+     margin-left: 20px;
      font-size: smaller;
+
  }
 
  #website {
      float: right;
-     margin-right: 15px;
+     margin-right: 20px;
      font-size: smaller;
  }
