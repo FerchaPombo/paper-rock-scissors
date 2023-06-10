@@ -22,7 +22,7 @@
  }
 
  section {
-     padding-bottom: 45%;
+     padding-bottom: 50%;
  }
 
 
@@ -37,10 +37,6 @@
      margin-bottom: 5px;
      font-weight: bolder;
 
- }
-
- #messages {
-     height: 20px;
  }
 
  .control {
@@ -100,16 +96,26 @@
      margin-left: 10%;
  }
 
- /*footer area */
+ /*Styling of the footer area */
  footer {
 
      position: absolute;
-<<<<<<< HEAD
-=======
-     padding-top: 150%;
->>>>>>> 01829af6f805cede2cbcfe0d4daad486b6cd56de
      width: 100%;
      left: 0;
      bottom: 0;
      font-size: xx-large;
+     margin-top: auto;
+     padding-top: 1rem;
+ }
+
+ #github {
+     float: left;
+     margin-left: 15px;
+     font-size: smaller;
+ }
+
+ #website {
+     float: right;
+     margin-right: 15px;
+     font-size: smaller;
  }

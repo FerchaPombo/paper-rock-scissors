@@ -43,8 +43,6 @@ function playGame(playerChoice) {
 
 
 };
-<<<<<<< HEAD
-=======
 
 /**
  * add a function to update the resut, dont really know how i am gonna create this, but here we go 
@@ -63,7 +61,7 @@ function updateScores() {
         if (computerScores === 'scissors') {
             return (computerScores + 1);
         } else {
-            return (playerscores + 1);
+            return (playerScores + 1);
         }
     }
     if (playerScores === 'scissors') {
@@ -75,4 +73,3 @@ function updateScores() {
         return (playerScores + 1);
     }
 }
->>>>>>> 01829af6f805cede2cbcfe0d4daad486b6cd56de
