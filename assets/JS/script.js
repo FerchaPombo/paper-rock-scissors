@@ -10,8 +10,8 @@ const computerImage = document.getElementById("computer-image");
 const messages = document.getElementById('messages');
 const choices = ['rock', 'paper', 'scissors'];
 
-computerChoice();
-playerChoice();
+let resultMessage = document.getElementById('messages');
+
 
 /**
  * Adding here the  event listeners to each of the buttons
@@ -19,8 +19,8 @@ playerChoice();
 
 for (let button of buttons) {
     button.addEventListener('click', function () {
-        let playerChoice = this.getAttribute("data-choice");
-        playGame(playerChoice);
+        let playerScores = this.getAttribute("data-choice");
+        playGame(playerScores);
     });
 
 }
@@ -30,49 +30,50 @@ for (let button of buttons) {
  * Computer`s choice is randomly selected.
  */
 
-function playGame(playerChoice) {
+function playGame(playerScores) {
 
-    playerImage.src = `assets/images/${choices[playerChoice]}.jpg`;
-    playerImage.alt = choices[playerChoice];
+    playerImage.src = `assets/images/${choices[playerScores]}.jpg`;
+    playerImage.alt = choices[playerScores];
 
     let computerChoice = Math.floor(Math.random() * 3);
 
     computerImage.src = `assets/images/${choices[computerChoice]}.jpg`;
     computerImage.alt = choices[computerChoice];
 
-    let result = (checkWinner(choices[computerChoice], choices[playerChoice]));
+    let result = (checkWinner(choices[computerScores], choices[playerScores]));
 
 
-    updateScores(result);
+    incrementScorePlayer(result);
+    incrementScoreComputer(resutl);
 };
 
 /**
  * Check winner function. With this function, our goal is to compare the choices from the player and from the computer to verufy who won.
  */
 function checkWinner() {
-    if (playerChoice == '0' && computerChoice == '2') {
+    if (playerScores == '0' && computerScores == '2') {
         resultMessage.innnerHTML = 'You Won!';
         incrementScorePlayer();
 
-    } else if (playerChoice == '0' && computerChoice == '1') {
+    } else if (playerScores == '0' && computerScores == '1') {
         resultMessage.innnerHTML = 'Computer Won! Try again!';
         incrementScoreComputer();
-    } else if (playerChoice == '1' && computerChoice == '0') {
+    } else if (playerScores == '1' && computerScores == '0') {
         resultMessage.innnerHTML = 'You Won!';
         incrementScorePlayer();
 
-    } else if (playerChoice == '1' && computerChoice == '2') {
+    } else if (playerScores == '1' && computerScores == '2') {
         resultMessage.innnerHTML = 'Computer Won! Try again!';
         incrementScoreComputer();
 
-    } else if (playerChoice == '2' && computerChoice == '1') {
+    } else if (playerScores == '2' && computerScores == '1') {
         resultMessage.innnerHTML = 'You Won!';
         incrementScorePlayer();
 
-    } else if (playerChoice == '2' && computerChoice == '0') {
+    } else if (playerScores == '2' && computerScores == '0') {
         resultMessage.innnerHTML = 'Computer Won! Try again!';
         incrementScoreComputer();
-    } else (playerChoice === computerChoice); {
+    } else (playerScores === computerScores); {
         resultMessage.innnerHTML = 'Its a Draw!';
     }
 }
