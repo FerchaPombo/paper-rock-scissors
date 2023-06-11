@@ -9,7 +9,9 @@ const playerImage = document.getElementById("player-image");
 const computerImage = document.getElementById("computer-image");
 const messages = document.getElementById('messages');
 const choices = ['rock', 'paper', 'scissors'];
-const score = [0, 0];
+
+computerChoice();
+playerChoice();
 
 /**
  * Adding here the  event listeners to each of the buttons
@@ -43,42 +45,48 @@ function playGame(playerChoice) {
 
     updateScores(result);
 };
+
+/**
+ * Check winner function. With this function, our goal is to compare the choices from the player and from the computer to verufy who won.
+ */
 function checkWinner() {
-    if (playerChoice === computerChoice) {
-        result.textContent = 'Its a Draw!';
-    }
-    else if (playerChoice == 'rock') {
-        if (computerChoice == 'paper') {
-            result.textContent = 'Computer Won';
-            computerScores++;
+    if (playerChoice == '0' && computerChoice == '2') {
+        resultMessage.innnerHTML = 'You Won!';
+        incrementScorePlayer();
 
+    } else if (playerChoice == '0' && computerChoice == '1') {
+        resultMessage.innnerHTML = 'Computer Won! Try again!';
+        incrementScoreComputer();
+    } else if (playerChoice == '1' && computerChoice == '0') {
+        resultMessage.innnerHTML = 'You Won!';
+        incrementScorePlayer();
 
-        } else {
-            result.textContent = 'Player Won';
-            playerScores++;
+    } else if (playerChoice == '1' && computerChoice == '2') {
+        resultMessage.innnerHTML = 'Computer Won! Try again!';
+        incrementScoreComputer();
 
-        }
-    }
-    else if (playerChoice == 'scissors') {
-        if (computerChoice == 'rock') {
-            result.textContent = 'Computer Won';
-            computerScores++;
+    } else if (playerChoice == '2' && computerChoice == '1') {
+        resultMessage.innnerHTML = 'You Won!';
+        incrementScorePlayer();
 
-        } else {
-            result.textContent = 'Player Won';
-            playerScore++;
-
-        }
-    }
-    else if (playerChoice == 'paper') {
-        if (computerChoice == 'scissors') {
-            result.textContent = 'Computer Won';
-            computerScores++;
-
-        } else {
-            result.textContent = 'Player Won';
-            playerScores++;
-
-        }
+    } else if (playerChoice == '2' && computerChoice == '0') {
+        resultMessage.innnerHTML = 'Computer Won! Try again!';
+        incrementScoreComputer();
+    } else (playerChoice === computerChoice); {
+        resultMessage.innnerHTML = 'Its a Draw!';
     }
 }
+
+/** Functions created to increment the score of the player and the Computer. based on the Code institute love math game */
+
+function incrementScorePlayer() {
+    let oldScore = parseInt(document.getElementById('playerScores').innerText);
+    document.getElementById('playerScores').innerText = ++oldscore;
+}
+
+function incrementScoreComputer() {
+    let oldScore = parseInt(document.getElementById('computerScores').innerText);
+    document.getElementById('computerScores').innerText = ++oldscore;
+
+}
+
