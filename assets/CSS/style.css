@@ -21,10 +21,6 @@
      line-height: 0%;
  }
 
- section {
-     padding-bottom: 50%;
- }
-
 
  /* game area styling */
  .game-area {
@@ -105,7 +101,7 @@
      bottom: 0;
      font-size: xx-large;
      margin-top: auto;
-     padding-top: 2rem;
+     padding-top: 50%;
  }
 
  #github {
