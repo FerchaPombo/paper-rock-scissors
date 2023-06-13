@@ -3,15 +3,14 @@
  */
 // Constants declaration code below based on Code Institute Rock Paper Scissors game
 const buttons = document.getElementsByClassName('control');
-const playerScores = document.getElementById("player-scores");
-const computerScores = document.getElementById("computer-scores");
+let playerScores = document.getElementById("player-scores");
+let computerScores = document.getElementById("computer-scores");
 const playerImage = document.getElementById("player-image");
 const computerImage = document.getElementById("computer-image");
 const messages = document.getElementById('messages');
 const choices = ['rock', 'paper', 'scissors'];
 
 let resultMessage = document.getElementById('messages');
-
 
 /**
  * Adding here the  event listeners to each of the buttons
