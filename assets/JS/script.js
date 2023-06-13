@@ -80,13 +80,16 @@ function checkWinner() {
 /** Functions created to increment the score of the player and the Computer. based on the Code institute love math game */
 
 function incrementScorePlayer() {
-    let oldScore = parseInt(document.getElementById('playerScores').innerText);
-    document.getElementById('playerScores').innerText = ++oldScore;
+    let oldScore = parseInt(document.getElementById('playerScores').innerHTML);
+    if (document.getElementById('playerScores') != null) {
+        document.getElementById('playerScores').innerText = ++oldScore;
+    }
 }
 
 function incrementScoreComputer() {
-    let oldScore = parseInt(document.getElementById('computerScores').innerText);
-    document.getElementById('computerScores').innerText = ++oldScore;
+    let oldScore = parseInt(document.getElementById('computerScores').innerHTML);
+    if (document.getElementById('computerScores') != null) {
+        document.getElementById('computerScores').innerText = ++oldScore;
 
+    }
 }
-
