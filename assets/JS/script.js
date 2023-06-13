@@ -44,7 +44,7 @@ function playGame(playerScores) {
 
 
     incrementScorePlayer(result);
-    incrementScoreComputer(resutl);
+    incrementScoreComputer(result);
 };
 
 /**
@@ -82,12 +82,12 @@ function checkWinner() {
 
 function incrementScorePlayer() {
     let oldScore = parseInt(document.getElementById('playerScores').innerText);
-    document.getElementById('playerScores').innerText = ++oldscore;
+    document.getElementById('playerScores').innerText = ++oldScore;
 }
 
 function incrementScoreComputer() {
     let oldScore = parseInt(document.getElementById('computerScores').innerText);
-    document.getElementById('computerScores').innerText = ++oldscore;
+    document.getElementById('computerScores').innerText = ++oldScore;
 
 }
 
