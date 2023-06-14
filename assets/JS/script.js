@@ -3,8 +3,8 @@
  */
 // Constants declaration code below based on Code Institute Rock Paper Scissors game
 const buttons = document.getElementsByClassName('control');
-let playerScores = document.getElementById("player-scores");
-let computerScores = document.getElementById("computer-scores");
+let playerScoreElement = document.getElementById("player-scores");
+let computerScoreElement = document.getElementById("computer-scores");
 const playerImage = document.getElementById("player-image");
 const computerImage = document.getElementById("computer-image");
 const messages = document.getElementById('messages');
@@ -18,8 +18,9 @@ let resultMessage = document.getElementById('messages');
 
 for (let button of buttons) {
     button.addEventListener('click', function () {
-        let playerScores = this.getAttribute("data-choice");
-        playGame(playerScores);
+        let playerChoiceIndex = this.getAttribute("data-choice");
+        let playerChoice = choices[playerChoiceIndex];
+        playGame(playerChoice);
     });
 
 }
@@ -29,67 +30,69 @@ for (let button of buttons) {
  * Computer`s choice is randomly selected.
  */
 
-function playGame(playerScores) {
+function playGame(playerChoice) {
 
-    playerImage.src = `assets/images/${choices[playerScores]}.jpg`;
-    playerImage.alt = choices[playerScores];
+    playerImage.src = `assets/images/${playerChoice}.jpg`;
+    playerImage.alt = playerChoice;
 
-    let computerChoice = Math.floor(Math.random() * 3);
+    let computerChoiceIndex = Math.floor(Math.random() * 3);
+    let computerChoice = choices[computerChoiceIndex];
 
-    computerImage.src = `assets/images/${choices[computerChoice]}.jpg`;
-    computerImage.alt = choices[computerChoice];
+    computerImage.src = `assets/images/${computerChoice}.jpg`;
+    computerImage.alt = computerChoice;
 
-    let result = (checkWinner(choices[computerScores], choices[playerScores]));
-
-
-    incrementScorePlayer(result);
-    incrementScoreComputer(result);
+    let result = checkWinner(computerChoice, playerChoice);
+    if (result === 'player') {
+        incrementScorePlayer();
+    } else if (result === 'computer') {
+        incrementScoreComputer();
+    }
 };
 
 /**
- * Check winner function. With this function, our goal is to compare the choices from the player and from the computer to verufy who won.
+ * Check winner function. With this function, our goal is to compare the choices from the player and from the computer to verify who won.
  */
-function checkWinner() {
-    if (playerScores == '0' && computerScores == '2') {
+function checkWinner(playerChoice, computerChoice) {
+
+    if (playerChoice === 'rock' && computerChoice === 'scissors') {
         resultMessage.innnerHTML = 'You Won!';
-        incrementScorePlayer();
+        return 'player';
 
-    } else if (playerScores == '0' && computerScores == '1') {
+    } else if (playerChoice === 'rock' && computerChoice === 'paper') {
         resultMessage.innnerHTML = 'Computer Won! Try again!';
-        incrementScoreComputer();
-    } else if (playerScores == '1' && computerScores == '0') {
+        return 'computer';
+
+    } else if (playerChoice === 'paper' && computerChoice === 'rock') {
         resultMessage.innnerHTML = 'You Won!';
-        incrementScorePlayer();
+        return 'player';
 
-    } else if (playerScores == '1' && computerScores == '2') {
+    } else if (playerChoice === 'paper' && computerChoice === 'scissors') {
         resultMessage.innnerHTML = 'Computer Won! Try again!';
-        incrementScoreComputer();
+        return 'computer';
 
-    } else if (playerScores == '2' && computerScores == '1') {
+    } else if (playerChoice === 'scissors' && computerChoice === 'paper') {
         resultMessage.innnerHTML = 'You Won!';
-        incrementScorePlayer();
+        return 'player';
 
-    } else if (playerScores == '2' && computerScores == '0') {
+    } else if (playerChoice === 'scissors' && computerChoice === 'rock') {
         resultMessage.innnerHTML = 'Computer Won! Try again!';
-        incrementScoreComputer();
-    } else (playerScores === computerScores); {
+        return 'computer';
+    } else (playerChoice === computerChoice); {
         resultMessage.innnerHTML = 'Its a Draw!';
+        return 'draw';
     }
 }
 
 /** Functions created to increment the score of the player and the Computer. based on the Code institute love math game */
 
 function incrementScorePlayer() {
-    let oldScore = parseInt(document.getElementById('playerScores').innerHTML);
-    if (document.getElementById('playerScores') != null) {
-        document.getElementById('playerScores').innerText = ++oldScore;
-    }
+    let oldScore = parseInt(playerScoreElement.innerHTML);
+    computerScoreElement.innerText = ++oldScore;
 }
 
-function incrementScoreComputer() {
-    let oldScore = parseInt(document.getElementById('computerScores').innerHTML);
-    if (document.getElementById('computerScores') != null) {
-        document.getElementById('computerScores').innerText = ++oldScore;
 
-    }
+function incrementScoreComputer() {
+    let oldScore = parseInt(computerScoreElement.innerHTML);
+    playerScoreElement.innerText = ++oldScore;
+
 }
