@@ -7,7 +7,6 @@ let playerScoreElement = document.getElementById("player-scores");
 let computerScoreElement = document.getElementById("computer-scores");
 const playerImage = document.getElementById("player-image");
 const computerImage = document.getElementById("computer-image");
-const messages = document.getElementById('messages');
 const choices = ['rock', 'paper', 'scissors'];
 
 let resultMessage = document.getElementById('messages');
