@@ -21,3 +21,20 @@ The header contains the title of the webpage and says exactly what the game is a
 This section has the 3 options to choose from. The instructions are clear on what to do and how to play. 3 buttons are displaying the 3 options from which to choose. These, are interactive and can be clicked with the player's choice, for the computer to generate a random choice too.
 
 ![ImageGameOptions]
+
+# Game Results
+
+In this feature of the webpage, when opening or refreshing the page, the main image of the game appears. A group of 3 hand-drawn hands, in a very simple style, make the gestures of the 3 options of the game.
+
+When one of the buttons, is clicked by the player, first, the image of their selection updates to the hand that represents their choice.
+
+Automatically, a Javascript code runs to generate a random choice by the computer and selects the other image accordingly.
+
+The winner is announced in the middle of the page, right under the buttons. the text is updated to 'You Won',' Computer Won!, Try again!', or 'It's a Draw!'.
+
+# Footer Area
+
+The footer of the webpage is positioned at the bottom of the webpage. In it, you can find the rules, again, with the same legible typography.
+You can also find the two links that click to my webpage and my GitHub profile. Both links are clickable and open on a new webpage.
+
+
