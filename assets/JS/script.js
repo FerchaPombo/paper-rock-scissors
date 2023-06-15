@@ -54,27 +54,27 @@ function playGame(playerChoice) {
 function checkWinner(playerChoice, computerChoice) {
 
     if (playerChoice === 'rock' && computerChoice === 'scissors') {
-        resultMessage.innnerText = 'You Won!';
+        resultMessage.innnerText = 'Computer Won! Try again!';
         return 'player';
 
     } else if (playerChoice === 'rock' && computerChoice === 'paper') {
-        resultMessage.innerText = 'Computer Won! Try again!';
+        resultMessage.innerText = 'You Won';
         return 'computer';
 
     } else if (playerChoice === 'paper' && computerChoice === 'rock') {
-        resultMessage.innerText = 'You Won!';
+        resultMessage.innerText = 'Computer Won! Try again!';
         return 'player';
 
     } else if (playerChoice === 'paper' && computerChoice === 'scissors') {
-        resultMessage.innerText = 'Computer Won! Try again!';
+        resultMessage.innerText = 'You Won!';
         return 'computer';
 
     } else if (playerChoice === 'scissors' && computerChoice === 'paper') {
-        resultMessage.innerText = 'You Won!';
+        resultMessage.innerText = 'Computer Won! Try again!';
         return 'player';
 
     } else if (playerChoice === 'scissors' && computerChoice === 'rock') {
-        resultMessage.innerText = 'Computer Won! Try again!';
+        resultMessage.innerText = 'You Won!';
         return 'computer';
     } else (playerChoice === computerChoice); {
         resultMessage.innerText = 'Its a Draw!';
@@ -85,13 +85,13 @@ function checkWinner(playerChoice, computerChoice) {
 /** Functions created to increment the score of the player and the Computer. based on the Code institute love math game */
 
 function incrementScorePlayer() {
-    let oldScore = parseInt(playerScoreElement.innerHTML);
+    let oldScore = parseInt(playerScoreElement.innerText);
     computerScoreElement.innerText = ++oldScore;
 }
 
 
 function incrementScoreComputer() {
-    let oldScore = parseInt(computerScoreElement.innerHTML);
+    let oldScore = parseInt(computerScoreElement.innerText);
     playerScoreElement.innerText = ++oldScore;
 
 }
