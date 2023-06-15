@@ -37,4 +37,6 @@ The winner is announced in the middle of the page, right under the buttons. the 
 The footer of the webpage is positioned at the bottom of the webpage. In it, you can find the rules, again, with the same legible typography.
 You can also find the two links that click to my webpage and my GitHub profile. Both links are clickable and open on a new webpage.
 
+# Features to Implement
 
+In the future, I would like to implement an audio track for the webpage and a chosen amount of times a player needs to win for the game to start all over.

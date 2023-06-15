@@ -54,30 +54,30 @@ function playGame(playerChoice) {
 function checkWinner(playerChoice, computerChoice) {
 
     if (playerChoice === 'rock' && computerChoice === 'scissors') {
-        resultMessage.innnerHTML = 'You Won!';
+        resultMessage.innnerText = 'You Won!';
         return 'player';
 
     } else if (playerChoice === 'rock' && computerChoice === 'paper') {
-        resultMessage.innnerHTML = 'Computer Won! Try again!';
+        resultMessage.innerText = 'Computer Won! Try again!';
         return 'computer';
 
     } else if (playerChoice === 'paper' && computerChoice === 'rock') {
-        resultMessage.innnerHTML = 'You Won!';
+        resultMessage.innerText = 'You Won!';
         return 'player';
 
     } else if (playerChoice === 'paper' && computerChoice === 'scissors') {
-        resultMessage.innnerHTML = 'Computer Won! Try again!';
+        resultMessage.innerText = 'Computer Won! Try again!';
         return 'computer';
 
     } else if (playerChoice === 'scissors' && computerChoice === 'paper') {
-        resultMessage.innnerHTML = 'You Won!';
+        resultMessage.innerText = 'You Won!';
         return 'player';
 
     } else if (playerChoice === 'scissors' && computerChoice === 'rock') {
-        resultMessage.innnerHTML = 'Computer Won! Try again!';
+        resultMessage.innerText = 'Computer Won! Try again!';
         return 'computer';
     } else (playerChoice === computerChoice); {
-        resultMessage.innnerHTML = 'Its a Draw!';
+        resultMessage.innerText = 'Its a Draw!';
         return 'draw';
     }
 }
