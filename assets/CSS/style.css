@@ -52,6 +52,10 @@
      letter-spacing: 2px;
  }
 
+ #messages {
+     font-size: 35px;
+     font-weight: bolder;
+ }
 
  .player {
      margin-left: 5%;
