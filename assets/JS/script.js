@@ -46,7 +46,7 @@ function playGame(playerChoice) {
     } else if (result === 'computer') {
         incrementScoreComputer();
     }
-};
+}
 
 /**
  * Check winner function. With this function, our goal is to compare the choices from the player and from the computer to verify who won.
