@@ -17,10 +17,11 @@
  /*header*/
  header {
      text-align: center;
-     font-size: 38px;
+     font-size: 30px;
      border-bottom: 5px black solid;
      line-height: 0%;
-     text-size-adjust: none;
+     text-size-adjust: absolute;
+     width: auto;
  }
 
 
