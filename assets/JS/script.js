@@ -76,7 +76,7 @@ function checkWinner(playerChoice, computerChoice) {
     } else if (playerChoice === 'scissors' && computerChoice === 'rock') {
         resultMessage.innerText = 'You Won!';
         return 'computer';
-    } else (playerChoice === computerChoice); {
+    } else if (playerChoice === computerChoice); {
         resultMessage.innerText = 'Its a Draw!';
         return 'draw';
     }

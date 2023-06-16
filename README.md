@@ -41,18 +41,17 @@ You can also find the two links that click to my webpage and my GitHub profile. 
 
 In the future, I would like to implement an audio track for the webpage and a chosen amount of times a player needs to win for the game to start all over.
 
-# Testing 
+## Testing
 
 * This game was tested on Android and iPhone mobile devices, as well as tested in Chrome and Firefox.
-* I confirm that, by playing with it, the scores are always correctly counted and added to the scores of each, player and the computer. 
+* I confirm that, by playing with it, the scores are always correctly counted and added to the scores of each, player and the computer.
 * I tested the adaptability of the header, game area, and footer are always responsive.
 * I  tested the fonts, colors, and features are easy to read and access thanks to the Lighthouse tool in DevTools.
-## Online testing sources used : ##
+  
+## Online testing sources used: ##
 *HTML*
 Before final deployment, no errors were returned when passing through the offical W3C Validator
 *CSS*
 Before final deployment, no errors were found when passing through the official W3C Jigsaw CSS Validator
 *Javascript*
 The javascript code was run through jshint to check for any errors.
-
-
