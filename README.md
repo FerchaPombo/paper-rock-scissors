@@ -4,7 +4,7 @@ Rock, Paper Scissors is an online game to try your luck! Choose one of the 3 opt
 
 Users of this game will be able to make decisions based on intuition and then have their luck proved by the computer`s random choice. try it out!
 
-![Responsice Mockup](/assets/images/newresponsivemuckup.jpg)
+[Responsive Mockup](/assets/images/responsive%20sample.jpg)
 
 The live website on Github pages can be accessed at the following link:
 
@@ -35,6 +35,7 @@ The winner is announced in the middle of the page, right under the buttons. the 
 ### Footer Area
 
 The footer of the webpage is positioned at the bottom of the webpage. In it, you can find the rules, again, with the same legible typography.
+
 You can also find the two links that click to my webpage and my GitHub profile. Both links are clickable and open on a new webpage.
 
 ### Features to Implement
@@ -48,10 +49,26 @@ In the future, I would like to implement an audio track for the webpage and a ch
 * I tested the adaptability of the header, game area, and footer are always responsive.
 * I  tested the fonts, colors, and features are easy to read and access thanks to the Lighthouse tool in DevTools.
   
-## Online testing sources used: ##
-*HTML*
+### Online testing sources used:
+* *HTML*
 Before final deployment, no errors were returned when passing through the offical W3C Validator
-*CSS*
+* *CSS*
 Before final deployment, no errors were found when passing through the official W3C Jigsaw CSS Validator
-*Javascript*
+* *Javascript*
 The javascript code was run through jshint to check for any errors.
+
+[HtmlValidator](assets/images/htmlvalidator.jpg)
+[CSSValidator](assets/images/W3C%20cssvalidatorcorrect.jpg)
+[JavaValidator](assets/images/Javascriptvalidator.jpg)
+[LighthouseResult](assets/images/lighthouse.jpg)
+
+## Bugs
+
+Throughout this module I encountered many difficulties with the learning material, the time I invested in it, and extensive Google searching. instead of stating one by one the bugs y fixed, I will be very descriptive with the sources I used. I hope I did not miss too many links.
+
+## Deployment
+
+- This site was deployed using Github pages, the steps i followed are the following:
+1. Inside my github repository, i navigated to Settings tab.
+2. I went to the pages section, and changed the branch name from "none" to main" and saved the changes.
+3. Then github created my url repository succesfully,  and provided me the link to it.
