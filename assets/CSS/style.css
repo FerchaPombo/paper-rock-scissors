@@ -23,6 +23,12 @@
      text-size-adjust: absolute;
      width: auto;
  }
+ @media screen and (max-width: 600px) {
+    header{
+     font-size: medium;
+    }
+    
+  }
 
 
  /* game area styling */
