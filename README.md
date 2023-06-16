@@ -8,19 +8,20 @@ Users of this game will be able to make decisions based on intuition and then ha
 
 The live website on Github pages can be accessed at the following link:
 
+[example link](https://ferchapombo.github.io/paper-rock-scissors/)
+
 ## Existing Features
 
 ### The Header
 
 The header contains the title of the webpage and says exactly what the game is about. Rock, Paper, Scissors is written in a simple, clear, and fun typography. The title is centered in the middle of the webpage as the only element on it.
 
-![ImageHeader]
-
 ### Game Options
 
 This section has the 3 options to choose from. The instructions are clear on what to do and how to play. 3 buttons are displaying the 3 options from which to choose. These, are interactive and can be clicked with the player's choice, for the computer to generate a random choice too.
 
-![ImageGameOptions]
+![Image Header and Contorl](assets/images/headerandcontrolarea.jpg)
+
 
 ### Game Results
 
@@ -37,6 +38,8 @@ The winner is announced in the middle of the page, right under the buttons. the 
 The footer of the webpage is positioned at the bottom of the webpage. In it, you can find the rules, again, with the same legible typography.
 
 You can also find the two links that click to my webpage and my GitHub profile. Both links are clickable and open on a new webpage.
+
+![Footer](assets/images/footer.jpg)
 
 ### Features to Implement
 
@@ -72,3 +75,14 @@ Throughout this module I encountered many difficulties with the learning materia
 1. Inside my github repository, i navigated to Settings tab.
 2. I went to the pages section, and changed the branch name from "none" to main" and saved the changes.
 3. Then github created my url repository succesfully,  and provided me the link to it.
+   
+   
+## Credits
+
+* Creator: Fercha pombo @ferchapombo
+* Link to Github : [example link](https://github.com/FerchaPombo)
+  
+Throughout the process of creating this game application, I went through different websites and forums that helped me with the CSS styling of my game,  as well as with creating the functions of my Javascript.
+Special thanks to the community in Slack and to Vitor Barbosa_5P who helped me through the process of checking and updating my score.
+
+Click here to acces  the list of Source Code. [click](/assets/linksources/SourceCodeReference)
