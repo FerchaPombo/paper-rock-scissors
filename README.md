@@ -4,7 +4,7 @@ Rock, Paper Scissors is an online game to try your luck! Choose one of the 3 opt
 
 Users of this game will be able to make decisions based on intuition and then have their luck proved by the computer`s random choice. try it out!
 
-[Responsive Mockup](/assets/images/responsive%20sample.jpg)
+![Responsive Mockup](/assets/images/responsive%20sample.jpg)
 
 The live website on Github pages can be accessed at the following link:
 
@@ -57,10 +57,10 @@ Before final deployment, no errors were found when passing through the official 
 * *Javascript*
 The javascript code was run through jshint to check for any errors.
 
-[HtmlValidator](assets/images/htmlvalidator.jpg)
-[CSSValidator](assets/images/W3C%20cssvalidatorcorrect.jpg)
-[JavaValidator](assets/images/Javascriptvalidator.jpg)
-[LighthouseResult](assets/images/lighthouse.jpg)
+![HtmlValidator](assets/images/htmlvalidator.jpg)
+![CSSValidator](assets/images/W3C%20cssvalidatorcorrect.jpg)
+![JavaValidator](assets/images/Javascriptvalidator.jpg)
+![LighthouseResult](assets/images/lighthouse.jpg)
 
 ## Bugs
 

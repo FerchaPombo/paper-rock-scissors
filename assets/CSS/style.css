@@ -125,12 +125,12 @@
  #github {
      float: left;
      margin-left: 20px;
-     font-size: smaller;
+     font-size: 25px;
 
  }
 
  #website {
      float: right;
      margin-right: 20px;
-     font-size: smaller;
+     font-size: 25px;
  }
