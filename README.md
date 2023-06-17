@@ -85,4 +85,4 @@ Throughout this module I encountered many difficulties with the learning materia
 Throughout the process of creating this game application, I went through different websites and forums that helped me with the CSS styling of my game,  as well as with creating the functions of my Javascript.
 Special thanks to the community in Slack and to Vitor Barbosa_5P who helped me through the process of checking and updating my score.
 
-Click here to acces  the list of Source Code. [click](/workspaces/paper-rock-scissors/assets/llinksources/SourceCodeReference.md)
+Click here to acces  the list of Source Code. [click](assets/llinksources/SourceCodeReference.md)
